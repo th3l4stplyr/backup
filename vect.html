@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <!--title, meta for mobiles, bootstrap css', link to on css-->
+        <title>Vectores</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles.css", rel="stylesheet">
+        <style>
+            i:hover {
+    			transform: scale(1.3);
+    			transition: transform 0.2s ease;
+                cursor: pointer;
+			}
+        </style>
+
+    </head>
+
+    <body>
+        <!--top bar of the website-->
+        <header>
+            <div class="container-fluid bg-black">
+                <div class="row justify-content-start">
+                    <div class="col col-1 m-5">
+                        <a href="index.html" style="text-decoration: none;">
+                            <i class="material-icons p-3 pe-3 ps-3 pe-md-4 ps-md-4 p-md-4  " style="color: black; background: rgb(170, 66, 255);">home</i>
+                        </a>
+                    </div>
+                    <div class="col col-md-4 d-flex">
+                        <div class="h1  m-5 ms-1 me-sm-5  me-2" style="color: rgb(170, 66, 255)">
+                            Los Vectores
+                        </div>
+                    </div>
+                    <div class="col col-4 col-md-3   ms-5  ms-md-0    mt-0 mt-md-5   pb-5 pb-md-0">
+                        <audio loop controls>
+                            <source src="music/The Ink Spots - I Don t Want to Set the World on Fire.mp3"  type="audio/mpeg">
+                        no puedes reporducir el audio
+                        </audio>
+                    </div>  
+                </div>
+            </div>
+        </header>
+
+        <!--Main content of the website-->
+        <main>
+            <!--definicion-->
+	    <div class="container d-flex  mt-md-5" style="background: linear-gradient(45deg, rgb(170, 66, 255), rgb(86, 48, 117)) ;">
+	        <div class="row">
+		    <div class="col col-md-7 col-12">
+		        <div class="m-5 h4 fw-bold text-white">
+			    Los vectores son segmentos de una linea orientados en un espacio. En otras palabras un vector
+			    es una flecha que cuenta con una serie de caracteristicas en relacion al espacio donde se haya, 
+			    este espacio (que puede ser bidimensional)
+			</div>
+
+		    </div>
+		    <div class="mb-5 mb-md-0  col col-md-5 col-10  ms-5 ms-md-0 ">
+			<img src="imgs/vector-removebg-preview.png" class="img-fluid mt-0 mt-md-5 pt-4 pe-3" alt="flechas"/>
+		    </div>
+		</div>
+	    </div>
+            <!--tipos-->
+	    <div class="container-fluid mt-md-5 mb-5" >
+	        <div class="row">
+                <div class="col col-md-6 col-lg-6 col-12 m-0 ms-md-5 me-md-3" style="background: rgb(226,173,255)">
+                    <div id="carousel1" class="carousel slide carousel-dark ps-md-2">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner p-0">
+                            <div class="carousel-item active">
+                                <img src="imgs/magnitud1.jpg" class="d-block w-100" alt="magn">
+                                <div class="carousel-caption mt-5 mt-md-0">
+                                    <h5>Magnitud</h5>
+                                    <p>Es la extension del vector en el plano, su distancia.</p>
+                                </div>	 
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/angulo1.jpg" class="d-block w-100" alt="magn">
+                                <div class="carousel-caption">
+                                    <h5>Ángulo</h5>
+                                    <p>Es el ángulo que el vector guarda respecto al eje X (u otro vector)</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/sentido1.jpg" class="d-block w-100" alt="magn">
+                                <div class="carousel-caption">
+                                    <h5>Sentido y dirección</h5>
+                                    <p>La dirección es la recta del vector, el sentido es donde este apunta.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/punto1.jpg" class="d-block w-100" alt="magn">
+                                <div class="carousel-caption">
+                                    <h5>Punto de aplicación</h5>
+                                    <p>Es el punto en el plano de donde parte el vector.</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev " type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+		        </div>
+
+            <!--Formulas etc-->
+                <div class="col col-12 col-md-5 mt-2 mt-md-0 border border-5 border-start-0 border-end-0" style="overflow-y: scroll; height: 70vh;">
+                    <ul class="h4 fw-bold" style="color: rgb(86, 48, 117);">
+                        <li class="mt-4 ">Magnitud: `|vec v|= sqrt(x^2 + y^2 + z^2)`</li>
+                        <li class="mt-4">Componente x: `V_x=Acos theta`</li>
+                        <li class="mt-4">Componente y: `V_y=Asin theta`</li>
+                        <li class="mt-4">Ángulo: `alpha = tan^-1(vec(A_y)/vec(A_x))`</li>
+                    </ul> 
+                    <p class="text-muted mt-4 ms-3 pb-3 h4 fst-italic">El ángulo del vector nos permite hallar su direccion y por ende su sentido.
+                        Es importante recordar que un vector no necesariamente parte del origen, pero sus componentes serán los mismos independientemente
+                        de donde se halle su punto de aplicación.
+                    </p>  
+                </div>
+            </div>
+        </div>
+            <!--ejercicios-->
+        <div class="container">
+            <div class="accordion accordion-flush m-5" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Ejercicio 1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="h5 mt-3 mb-3">Se tiene un vector `vec(AB)` de componentes, (5,-2), si se sabe que el vector termina en B=(12,-3) ¿Dónde comienza A?</p>
+                            <div style="color: rgb(75, 23, 117)">
+                                <p class="h5">Solución:</p>
+                                <p>`vec(AB) = A-B`</p>
+                                <p>`(5,-2)=(12-A_x, -3-A_y)`</p>
+                                <p>`12-A_x=5`  `-3-A_y=-2`</p>
+                                <p>`12-5=A_x`  `-3+2=A_y`</p>
+                                <p>`A=(7,-1)`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Ejercicio 2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="h5 mt-3 mb-3">Sabiendo que un vector `v` tiene los componentes `V_x=4` y `V_y=6` calcule la magnitud del vector</p>
+                            <div style="color: rgb(75, 23, 117)">
+                                <p class="h5">Solución:</p>
+                                <p>`|v|=sqrt(4^2 + 6^2)`</p>
+                                <p>`|v|=sqrt(16 + 36)`</p>
+                                <p>`|v|=sqrt(52)`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Ejercicio 3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="h5 mt-3 mb-3">Calcule la suma de los siguientes vectores `vec(A)=(8,2)` `vec(B)=(3,-1)` `vec(C)=(9,4)`</p>
+                            <div style="color: rgb(75, 23, 117)">
+                                <p class="h5">Solución:</p>
+                                <p>`vec(A)+vec(B)+vec(C)=(8+3+9,2-1+4)`</p>
+                                <p>`vec(A)+vec(B)+vec(C)=(20,5)`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Ejercicio 4
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="h5 mt-3 mb-3">Partiendo de un vector `vec(H)` con magnitud con magnitud 10 y angulo de 60 grados. Hallar su componente X</p>
+                            <div style="color: rgb(75, 23, 117)">
+                                <p class="h5">Solución:</p>
+                                <p>`H_x=10 cos(60^circ)`</p>
+                                <p>`H_x=5`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Ejercicio 5
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="h5 mt-3 mb-3">Con un vector `vec(Q)` de magnitud 15 y ángulo de 30 grados, hallar su componente y</p>
+                            <div style="color: rgb(75, 23, 117)">
+                                <p class="h5">Solución:</p>
+                                <p>`H_y=15 sin(30^circ)`</p>
+                                <p>`H_y=7,5`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+            <!--recursos extra-->
+            <div class="container d-flex justify-content-center mb-5">
+                <div class="row mt-5">
+                    <div class="col col-6 col-md-3">
+                        <div class="card">
+                            <a href="https://www.youtube.com/embed/IrTeyyzerjI?si=ySe8l7oPYuxiClXz" target="_blank">
+                                <img src="https://i.ytimg.com/vi/IrTeyyzerjI/maxresdefault.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body" style="cursor: pointer;">
+                            <p class="card-text h4">Video explicativo sobre vectores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-6 col-md-3">
+                        <div class="card">
+                            <a href="https://es.slideshare.net/slideshow/tema-1-vectores/237222452" target="_blank">
+                                <img src="https://www.neurochispas.com/wp-content/uploads/2022/11/Suma-de-vectores-metodo-del-poligono-desde-A-hasta-B.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body" style="cursor: pointer;">
+                            <p class="card-text h4">Slideshare explicativo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="container p-4 mb-5 rounded mt-5 mt-md-0" style="background: linear-gradient(135deg, rgb(170, 66, 255), rgb(75, 23, 117)) ;" >
+                            <div class="card">
+                                <div class="card-body">
+                                  <p class="card-text h3 ">Los vectores son fundamentales en diversas áreas de la ciencia y la tecnología, ya que proporcionan una manera de representar magnitudes físicas. 
+                                    Los vectores son indispensables para entender y manipular fenómenos que involucran direcciones y magnitudes en el mundo real y virtual.
+                                    <a href="https://es.wikipedia.org/wiki/Vector" target="_blank">(Más información)</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Lower part with info-->
+        <footer>
+            <div class="container-fluid bg-black text-white d-flex justify-content-center p-3">
+                <p class="m-3">Por: Miguel Arismendi CI:31.348.551 - Universidad de Margarita - Fisica 1 - 2024</p>
+            </div>
+
+        </footer>
+
+        <!--scripts for carousel and other stuff-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            const carouselElement = document.querySelector('#carousel1');
+            const carousel = new bootstrap.Carousel(carouselElement);
+        </script>
+    </body>
+</html>
